@@ -7,6 +7,7 @@ target 'OmniNews' do
   pod 'Firebase/Database'
   pod 'RxSwift', '~> 5'
   pod 'RxCocoa', '~> 5'
+  pod 'EasyPeasy', '~> 1'
 
   pod 'RxFirebase/Firestore'
   pod 'RxFirebase/RemoteConfig'

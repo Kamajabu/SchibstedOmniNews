@@ -32,6 +32,7 @@
 </table>
 <ul>
 <li class="has-line-data" data-line-start="10" data-line-end="11">I understood main requirement for List Screen to be a possibility to switch between topics and articles, so I decided to go with UITabBar. I’m not entirely sure if that was original purpose, but it seemed like a good way to show some architecture and coordinator pattern skills,</li>
+<li class="has-line-data" data-line-start="10" data-line-end="11">Details screen were understood as separate screen, not split screen (UISplitViewController) as preparing an app specifically for iPad were not mentioned,</li>
 <li class="has-line-data" data-line-start="11" data-line-end="12">All commits are made directly to master - I’m normally used to gitflow, but for sake of that project creating feature branches, maintaining develop, and release tags seemed like overkill,</li>
 <li class="has-line-data" data-line-start="12" data-line-end="13">In models coding keys are exposed intentionally; for majority of cases they can be implicitly computed but based on previous experience I found out that it’s good idea to have them clearly exposed from the start, which provides consistency if any of keys requires modified mapping parameters.</li>
 <li class="has-line-data" data-line-start="13" data-line-end="14">Models were generated based on JSON downloaded from firebase, for generating purposes <a href="http://app.quicktype.io">app.quicktype.io</a> was used,</li>

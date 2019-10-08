@@ -14,7 +14,7 @@ import UIKit
 class ArticleListCell: UITableViewCell {
     private var viewModel: ArticleViewModel?
     private var disposeBag = DisposeBag()
-    
+
     private lazy var thumbnailImage: UIImageView = {
         let thumbnail = UIImageView()
         thumbnail.image = UIImage(named: SharedImages.placeholder)
@@ -30,9 +30,9 @@ class ArticleListCell: UITableViewCell {
         titleLabel.backgroundColor = titleBackground
         return titleLabel
     }()
-    
+
     private let margin: CGFloat = 10
-    private let titleBackground = UIColor(white: 240/255, alpha: 0.7)
+    private let titleBackground = UIColor(white: 240 / 255, alpha: 0.7)
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)

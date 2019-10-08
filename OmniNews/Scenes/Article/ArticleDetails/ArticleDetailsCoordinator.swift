@@ -22,7 +22,7 @@ class ArticleDetailsCoordinator: Coordinator {
     func start() {
         let articlesDetailsViewController = ArticlesDetailsViewController(viewModel: viewModel)
         presenter.pushViewController(articlesDetailsViewController, animated: true)
-        
+
         self.articlesDetailsViewController = articlesDetailsViewController
     }
 }

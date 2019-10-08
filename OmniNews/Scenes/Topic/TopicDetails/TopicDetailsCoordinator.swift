@@ -21,7 +21,7 @@ class TopicDetailsCoordinator: Coordinator {
     func start() {
         let topicDetailsViewController = TopicDetailsViewController(model: model)
         presenter.pushViewController(topicDetailsViewController, animated: true)
-        
+
         self.topicDetailsViewController = topicDetailsViewController
     }
 }

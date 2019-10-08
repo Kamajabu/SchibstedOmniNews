@@ -7,15 +7,13 @@ target 'OmniNews' do
   pod 'RxCocoa', '~> 5'
   pod 'EasyPeasy', '~> 1'
 
-  pod 'RxFirebase/Firestore'
-  pod 'RxFirebase/RemoteConfig'
-  pod 'RxFirebase/Database'
-  pod 'RxFirebase/Storage'
-  pod 'RxFirebase/Auth'
-  pod 'RxFirebase/Functions'
+  pod 'RxFirebase/Database', '~> 0'
 
   target 'OmniNewsTests' do
     inherit! :search_paths
+    pod 'Quick', '~> 2'
+    pod 'Nimble', '~> 8'
+    pod 'RxTest', '~> 5'
   end
 
 end

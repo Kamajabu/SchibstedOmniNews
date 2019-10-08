@@ -15,7 +15,7 @@ class TopicDetailsCoordinator: Coordinator {
 
     init(presenter: UINavigationController, topic: Topic) {
         self.presenter = presenter
-        model = topic
+        self.model = topic
     }
 
     func start() {

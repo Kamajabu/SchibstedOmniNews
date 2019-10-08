@@ -27,13 +27,13 @@ final class ApplicationCoordinator: NSObject, Coordinator, UITabBarControllerDel
 
     init(window: UIWindow) {
         self.window = window
-        tabController = UITabBarController()
+        self.tabController = UITabBarController()
 
-        articlesCoordinator = ArticlesListCoordinator(mainStore: mainStore)
-        articlesCoordinator.start()
+        self.articlesCoordinator = ArticlesListCoordinator(mainStore: mainStore)
+        self.articlesCoordinator.start()
 
-        topicsCoordinator = TopicsListCoordinator(mainStore: mainStore)
-        topicsCoordinator.start()
+        self.topicsCoordinator = TopicsListCoordinator(mainStore: mainStore)
+        self.topicsCoordinator.start()
 
         var controllers: [UIViewController] = []
 

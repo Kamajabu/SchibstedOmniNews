@@ -25,9 +25,9 @@ final class ApiClient: NetworkClient {
         ref.child(NetworkKeys.articles)
             .rx
             .observeSingleEvent(.value)
-            .map { snapshot -> [Article] in
+            .map { [weak self] snapshot -> [Article] in
                 guard let value = snapshot.value,
-                    let data = self.jsonToData(json: value) else {
+                    let data = self?.jsonToData(json: value) else {
                     return []
                 }
                 return try JSONDecoder().decode([Article].self, from: data)
@@ -38,9 +38,9 @@ final class ApiClient: NetworkClient {
         ref.child(NetworkKeys.topics)
             .rx
             .observeSingleEvent(.value)
-            .map { snapshot -> [Topic] in
+            .map { [weak self]  snapshot -> [Topic] in
                 guard let value = snapshot.value,
-                    let data = self.jsonToData(json: value) else {
+                    let data = self?.jsonToData(json: value) else {
                     return []
                 }
                 return try JSONDecoder().decode([Topic].self, from: data)
